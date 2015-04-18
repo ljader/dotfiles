@@ -1,0 +1,51 @@
+[user]
+	name = Lukasz Jader
+	email = ljaderdev@gmail.com
+
+[core]
+	editor = vim
+	autocrlf = false
+
+[github]
+	user = ljader
+
+[alias]
+	ls = log --pretty=format:%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn] --decorate
+	lds = log --pretty=format:%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn] --decorate --date=short
+	llog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit
+	lg = log --graph --decorate --pretty=oneline --abbrev-commit
+
+	l = log --pretty=format:%C(yellow)%h\\ %C(white)\\ %s\\ %C(red)[%cn] --abbrev-commit --date=short
+	lq = log --pretty=format:%C(yellow)%h\\ %C(white)\\ %s\\ %C(red)[%cn] --abbrev-commit --date=short -20
+	lj = log --pretty=format:%C(yellow)%h\\ %ad\\ %C(white)\\ %s\\ %C(red)[%cn] --abbrev-commit --date=short
+	ljq = log --pretty=format:%C(yellow)%h\\ %ad\\ %C(white)\\ %s\\ %C(red)[%cn] --abbrev-commit --date=short -20
+
+	s = status
+	st = status -s
+	c = commit
+	ca = commit -a
+	cm = commit -m
+	cam = commit -am
+	co = checkout
+	cp = cherry-pick
+	cl = clone
+	b = branch
+	m = merge
+	mf = merge --no-ff
+	dc = diff --cached
+	dcw = diff --cached --word-diff
+	dp = diff --patch
+	dpw = diff --patch --word-diff
+	sl = stash list
+	sa = stash apply
+	ss = stash save
+	
+	pom = push origin master
+
+	svnr = svn rebase
+	svnd = svn dcommit
+	svnl = svn log --oneline --show-commit
+[http]
+	sslVerify = false
+
