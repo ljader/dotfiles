@@ -42,6 +42,9 @@
 	ss = stash save
 	
 	pom = push origin master
+	tags = tag -l
+	branches = branch -a
+	remotes = remote -v
 
 	svnr = svn rebase
 	svnd = svn dcommit
